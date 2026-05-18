@@ -33,7 +33,7 @@ By orchestrating simulated automated computer vision cameras, edge telemetry nod
 
 ### 🗺️ 5. Geospatial Routing & Dossier Compiling
 * **Haversine Distance Metrics:** Employs high-precision coordinate geometry calculation logic to parse arrays of infrastructure assets and pinpoint the absolute closest medical, police, or roadside recovery team without computational lag.
-* **Dynamic PDF Dossier Compiling:** Integrates a serverless screen capture layout system that bundles active map routing states and dispatch metrics into a localized, down-loadable legal incident archive via client-side binary compilation.
+* **Dynamic PDF Dossier Compiling:** Integrates a serverless screen capture layout system that bundles active map routing states and dispatch metrics into a localized, downloadable legal incident archive via client-side binary compilation.
 
 ---
 
@@ -56,11 +56,11 @@ By orchestrating simulated automated computer vision cameras, edge telemetry nod
 
 ```text
 EchoNet_SOS/
-├── .gitignore           # Global asset lock (node_modules, local keys, secret .env arrays)
+├── .gitignore           # Global asset lock (node_modules, local keys)
 ├── README.md            # Master system operations guide
 ├── Backend/
-│   ├── models/          # Schema enforcement components (Node structure, tracking states)
-│   ├── routes/          # Express API route endpoints (GET/POST endpoints)
+│   ├── models/          # Schema enforcement components
+│   ├── routes/          # Express API route endpoints
 │   ├── seed.js          # Pre-packaged smart city infrastructure generation array
 │   └── server.js        # Node.js gateway entry point & live Socket.io loop
 └── Frontend/
@@ -71,3 +71,58 @@ EchoNet_SOS/
         ├── main.jsx     # Vite React DOM orchestration script
         ├── App.jsx      # Master Command Grid interface controller
         └── utils/       # Geometrical routing calculation formulas
+```
+
+---
+
+## 🚀 Deployment Instructions
+
+### System Environment Requirements
+* **Node.js** (v16.x or superior engine runtime)
+* **MongoDB Core** (Active local system daemon or a remote cloud Atlas URI)
+
+### 1. Repository Setup
+```bash
+git clone [https://github.com/sahil-muneer/EchoNet_SOS.git](https://github.com/sahil-muneer/EchoNet_SOS.git)
+cd EchoNet_SOS
+```
+
+### 2. Launching the Backend Server Core
+```bash
+cd Backend
+npm install
+```
+
+Generate an isolated environment file named `.env` in the root of the `Backend/` folder:
+```text
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+Boot the server instance:
+```bash
+npm start
+```
+
+### 3. Launching the Control Dashboard UI
+Open a secondary terminal workspace and load the layout assets:
+```bash
+cd ../Frontend
+npm install
+```
+
+Generate an environment configuration file named `.env` in the root of the `Frontend/` folder:
+```text
+VITE_API_BASE_URL=http://localhost:5000/api
+```
+
+Execute the application frame:
+```bash
+npm run dev
+```
+
+Navigate your local browser window to `http://localhost:5173` to initialize the operational Command Matrix.
+
+---
+
+> 💡 **Operational Guideline:** Upon interface mounting, immediately click the yellow **"Init Demo Grid"** button on the control column. This pulls the synchronized infrastructure node network directly into your localized dashboard matrix.
