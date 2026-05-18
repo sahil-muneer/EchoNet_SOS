@@ -83,7 +83,7 @@ EchoNet_SOS/
 
 ### 1. Repository Setup
 ```bash
-git clone [https://github.com/sahil-muneer/EchoNet_SOS.git](https://github.com/sahil-muneer/EchoNet_SOS.git)
+git clone https://github.com/sahil-muneer/EchoNet_SOS.git
 cd EchoNet_SOS
 ```
 
@@ -107,7 +107,7 @@ npm start
 ### 3. Launching the Control Dashboard UI
 Open a secondary terminal workspace and load the layout assets:
 ```bash
-cd ../Frontend
+cd Frontend
 npm install
 ```
 
