@@ -1,7 +1,6 @@
 # 🛰️ EchoNet SOS: Autonomous Emergency Command Grid
 
-💾 **Production Status:** Core System Engine Frozen (v1.0.0 Stable)  
-🏆 **Project Purpose:** IIT Madras Road Safety Hackathon 2026 Submission  
+💾 **Production Status:** Core System Engine Frozen (v1.0.0 Stable)    
 🔒 **Architecture:** Full-Stack Decoupled MERN Node Engine + IoT Hardware Interface Matrix
 
 ---
